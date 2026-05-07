@@ -45,5 +45,6 @@ This repository contains solutions to 40 JavaScript practice questions focused o
 # Pre-requiste
 Before solving the question learn about Objects and Array then go through the assignment questions.
 After solving this questions You will get a deep Understanding of How object and Array works together.
+Each file contains five question Before running my code commen the code and then execute it for better results.
 
 # Have a good day.
