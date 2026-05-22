@@ -75,6 +75,36 @@ Handwritten explanations for deeper understanding
 # 📸 Handwritten Notes
 
 ### Objects & Arrays Notes
+In this image we learn about for--in and for--of loop and How we find unique element in an array.
 ![Obj+Array-1](Images/Obj+Array-1.jpeg)
+How set is used and it's use cases and second one is How to cnvrt object to array.
+![Obj+Array-2](Images/Obj+Array-2.jpeg)
+How we use In-built method to sort an array and how sort works in string.
+![Obj+Array-3](Images/Obj+Array-3.jpeg)
+How object to query string works using in-built method 
+Built-in methods to find common key between two objects.
+![Object](Images/Obj+Array-4.jpeg)
 
+# 02_intermediate
+How object stores value and update them.
+![Obj+Array-6](Images/Obj+Array-6.jpeg)
+In this we know about how value allocates to other object dynamically.
+![Obj+Array-7](Images/Obj+Array-7.jpeg)
+How we merge array by using different method and How elem pushed into another array.
+![Obj+Array-8](Images/Obj+Array-8.jpeg)
+How hashing concept works internally.
+![Obj+Array-10](Images/Obj+Array-9.jpeg)
+Question with doubt
+![Obj+Array-10](Images/Obj+Array-10.jpeg)
+Chunk in an array and How slice works 
+![Obj+Array-11](Images/Obj+Array-11.jpeg)
+All about Slice in js.
+![Obj+Array-12](Images/Obj+Array-12.jpeg)
+Pattern to find max/min/longest/shortest types of problems.
+![Obj+Array-13](Images/Obj+Array-13.jpeg)
+Object inversion in javascript
+![Obj+Array-14](Images/Obj+Array-14.jpeg)
+![Obj+Array-15](Images/Obj+Array-15.jpeg)
+How recursion works 
+![Obj+Array-16](Images/Obj+Array-16.jpeg)
 # Have a good day.
