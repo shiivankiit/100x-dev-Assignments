@@ -47,4 +47,34 @@ Before solving the question learn about Objects and Array then go through the as
 After solving this questions You will get a deep Understanding of How object and Array works together.
 Each file contains five question Before running my code commen the code and then execute it for better results.
 
+# What we learn from this repo and Explanation of the Code.
+A curated collection of JavaScript problems focused on Objects, Arrays, Loops, Transformations, and Data Manipulation.
+This repository demonstrates problem-solving skills using core JavaScript concepts without relying heavily on external libraries.
+
+It also includes:
+
+Clean and beginner-friendly solutions
+Logic building practice
+Real interview-style coding questions
+Handwritten explanations for deeper understanding
+
+# Concept Practiced
+| Concept            | Usage                    |
+| ------------------ | ------------------------ |
+| `for...in`         | Iterating objects        |
+| `for...of`         | Iterating arrays         |
+| `Object.keys()`    | Extract object keys      |
+| `Object.values()`  | Extract object values    |
+| `Object.entries()` | Convert object to arrays |
+| `reduce()`         | Data aggregation         |
+| `Set`              | Removing duplicates      |
+| `filter()`         | Conditional selection    |
+| `sort()`           | Sorting arrays           |
+| `URLSearchParams`  | Query string generation  |
+
+# 📸 Handwritten Notes
+
+### Objects & Arrays Notes
+![Obj+Array-1](Images/Obj+Array-1.jpeg)
+
 # Have a good day.
