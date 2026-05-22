@@ -73,5 +73,8 @@ Handwritten explanations for deeper understanding
 | `URLSearchParams`  | Query string generation  |
 
 # 📸 Handwritten Notes
+
+### Objects & Arrays Notes
 ![Obj+Array-1](Images/Obj+Array-1.jpeg)
+
 # Have a good day.
