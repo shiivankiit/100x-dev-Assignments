@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+
+}
+.nav-bar{
+    height: 70px;
+    background-color: #0d1014;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.left{
+   margin:100px;
+   display: flex;
+   align-items: center;
+}
+.right{
+    margin-right:100px;
+    display: flex;
+
+}
+input{
+    background-color: transparent;
+    border: 1px solid gray;
+    padding: 10px 10px 10px 25px;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    margin-right: 15px;
+    cursor: pointer;
+}
+.nav-btn{
+    background-color: rgb(0, 149, 255);
+    margin-left: 10px;
+    padding: 8px 15px;
+    color: white;
+    border: none;
+    border-radius: 7px;
+}
+.nav-btn:hover{
+    opacity: 0.7;
+}
+.vs-image{
+    width: 30px;
+    height: 30px;
+    margin-right: 2px;
+}
+a{
+    color: white;
+    margin: 20px;
+    text-decoration: none;
+    font-family: Arial;
+    font-weight: bold;
+}
+.icon{
+    width: 20px;
+    margin-right: 8px;
+    margin-left: 8px;
+    cursor: pointer;
+}
+.icon:hover{
+    background-color: rgb(255, 255, 255);
+}
+.vs{
+    font-size: 21px;
+}
+.search-box{
+    display: flex;
+    align-items:center;
+}
+.search-icon{
+    position:absolute;
+    top: 28px;
+    padding-left: 5px;
+}
+.shortcut{
+    border: 1px solid gray;
+    color: white;
+    position: absolute;
+    margin-left: 120px;
+    font-size: 15px;
+    padding: 2px;
+    font-family: Arial;
+    border-radius: 2px;
+}
+
+
+.dropdown {
+    position: relative;
+    padding: 20px;
+    border: 1px solid transparent;
+}
+.dropdown-menu{
+    position: absolute;
+    top: 100%;
+    left: 0;
+
+    width: 200px;
+    background: #0d1117;
+
+    border: 1px solid #555;
+    border-radius: 10px;
+
+    padding: 15px;
+    display: none;
+}
+.dropdown:hover .dropdown-menu{
+    display: block;
+}
+.dropdown-menu a{
+    display: block;
+    font-weight: bold;
+}
