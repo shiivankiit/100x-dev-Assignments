@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complicated-Grid</title>
+
+    <style>
+       .main{
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        height: 200px;
+       }
+       .left{
+        align-items: center;
+        justify-content: center;
+        background-color: red;
+       }
+       .right{
+        background-color: blue;
+       }
+       .grid1{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr ;
+       }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="left">
+            left
+            <p>text text text text text
+                text text text text text
+            </p>
+        </div>
+        <div class="right">
+           <div class="grid1">
+                <h2>Col 1</h2>
+                <h2>Col 2</h2>
+                <h2>Col 3</h2>
+                <h2>Col 1</h2>
+                <h2>Col 2</h2>
+                <h2>Col 3</h2>
+                <h2>Col 1</h2>
+                <h2>Col 2</h2>
+                <h2>Col 3</h2>
+           </div>
+        </div>
+    </div>
+</body>
+</html>
