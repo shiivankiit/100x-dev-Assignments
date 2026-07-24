@@ -1,0 +1,21 @@
+#red-btn{
+    background-color: red;
+    border: none;
+    padding: 10px 20px;
+    color: white;
+    border-radius: 5px;
+}
+#yllw-btn{
+    background-color: yellow;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+#blu-btn{
+    background-color: blue;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
