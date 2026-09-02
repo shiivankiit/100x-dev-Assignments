@@ -1,0 +1,176 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f6f8fa;
+}
+
+.container {
+  width: 550px;
+}
+
+/* Search section */
+
+.search-box {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 25px;
+}
+
+.search-box input {
+  flex: 1;
+  padding: 12px 15px;
+
+  border: 1px solid #d0d7de;
+  border-radius: 8px;
+
+  font-size: 15px;
+  outline: none;
+}
+
+.search-box input:focus {
+  border-color: #0969da;
+}
+
+.search-box button {
+  padding: 12px 20px;
+
+  border: none;
+  border-radius: 8px;
+
+  background-color: #24292f;
+  color: white;
+
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.search-box button:hover {
+  background-color: #32383f;
+}
+
+
+/* ------------------------- */
+/* Profile Card               */
+/* ------------------------- */
+
+.profile-card {
+  display: none; /* 👈 hidden when page loads */
+
+  width: 100%;
+  padding: 30px;
+
+  gap: 25px;
+
+  background-color: white;
+
+  border: 1px solid #d0d7de;
+  border-radius: 12px;
+
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+
+/* JavaScript adds this class after search */
+
+.profile-card.show {
+  display: flex;
+}
+
+
+/* Avatar */
+
+.avatar {
+  width: 120px;
+  height: 120px;
+
+  flex-shrink: 0;
+
+  border-radius: 50%;
+  object-fit: cover;
+
+  border: 4px solid #f0f2f4;
+}
+
+
+/* Profile information */
+
+.profile-info {
+  flex: 1;
+}
+
+.name {
+  font-size: 26px;
+  color: #24292f;
+  margin-bottom: 5px;
+}
+
+.username {
+  font-size: 15px;
+  color: #57606a;
+  margin-bottom: 15px;
+}
+
+.bio {
+  font-size: 14px;
+  line-height: 1.5;
+  color: #24292f;
+
+  margin-bottom: 12px;
+}
+
+
+/* Profile link */
+
+.profile-url {
+  display: inline-block;
+
+  margin-bottom: 22px;
+
+  color: #0969da;
+  font-size: 14px;
+
+  text-decoration: none;
+}
+
+.profile-url:hover {
+  text-decoration: underline;
+}
+
+
+/* Stats */
+
+.stats {
+  display: flex;
+  gap: 30px;
+
+  padding-top: 15px;
+
+  border-top: 1px solid #eaeef2;
+}
+
+.stats div {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.stats strong {
+  font-size: 18px;
+  color: #24292f;
+}
+
+.stats span {
+  font-size: 12px;
+  color: #57606a;
+}
