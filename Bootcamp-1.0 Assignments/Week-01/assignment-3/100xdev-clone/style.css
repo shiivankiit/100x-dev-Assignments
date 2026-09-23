@@ -79,12 +79,12 @@ body{
     /* IMPORTANT */
     z-index: 0;
 
-    min-height: 700px;
+    min-height: 500px;
+    isolation: isolate;
 }
 
 .hero-glow {
     position: absolute;
-
     left: 50%;
     top: -150px;
 
@@ -97,7 +97,7 @@ body{
 
     border-radius: 50%;
 
-    filter: blur(160px);
+    filter: blur(80px);
 
     pointer-events: none;
 
@@ -181,4 +181,159 @@ transition-property:all;
     color: #60A5FA;
     text-decoration: none;
     font-weight: 500;
+}
+
+.card-section{
+    min-height: 1200px;
+    position: relative;
+}
+
+.image-section {
+    display: flex;
+    gap: 40px;
+    flex-direction: row;
+    justify-content: center;
+}
+.card-section img{
+    width: 340px;
+    height: 190px;
+    border-radius: 6px;
+    border: 0.1px solid rgb(207, 207, 207);
+    cursor: pointer;
+}
+
+.rounded-card{
+    width:86%;
+    height: 20%;
+    background: linear-gradient(to bottom, #5da2ff, #1f4ed8);
+    margin-left: 90px;
+    margin-top: 60px;
+    border-radius: 10px;
+    padding: 40px;
+}
+
+.rounded-card h1{
+    margin-bottom: 10px;
+}
+.rounded-card p{
+    margin-bottom: 20px;
+}
+.rounded-card button{
+    padding: 16px;
+    color:#60A5FA;
+    border-radius: 6px;
+    border: none;
+
+}
+
+.bar{
+    width: 86%;
+    height: 5%;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 90px;
+    margin-top: 60px;
+}
+.bar a{
+    color: #5da2ff;
+}
+.course-card{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 10px;
+    row-gap: 10px;
+    margin-top: 30px;
+    margin-left: 70px;
+    margin-right: 70px;
+}
+.course-card .cards{
+    height: 310px;
+    width: 250px;
+    background-color: rgb(12, 15, 23);
+    border: 1px solid rgba(255, 255, 255, 0.1) white;
+    position: relative;
+    overflow: visible;
+    border-radius: 5px;
+
+        transition:
+        border-color 0.3s ease,
+        box-shadow 0.3s ease;
+}
+.course-card .cards:hover {
+    border-color: rgba(255, 255, 255, 0.2);
+
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, 0.25);
+}
+.cards .card1{
+    width: 249px;
+    height: 170px;
+    object-fit: contain;
+    border: none;
+    border-radius: 11px 11px 0 0;
+   
+}
+
+.top{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.card-btn{
+    display: flex;
+    padding: 4px;
+    align-items: center;
+    background-color: #3b82f61a;
+    gap: 6px;
+    border-radius: 40px;
+    border: 1px solid rgba(173,216,230,0.5);
+    margin-left: 10px;
+    color: rgb(147,197,253);
+}
+.bundle-icon {
+    display: block;
+     min-width: 16px;
+    max-width: 16px;
+    min-height: 16px;
+    max-height: 16px;
+    color: rgb(147 197 253);
+   
+}
+.text-1{
+    color: rgb(147 197 253);
+    opacity: 1;
+}
+.cards h3{
+    margin-left: 10px;
+    margin-top: 10px;
+    color: white;
+    line-height: 1.45;
+    font-weight: 600;
+}
+.bottom-bar{
+    margin-top: 8px;
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.old-price{
+    font-size: 10px;
+    margin-top: 10px;
+    color: rgba(255,255,255,0.55);
+    text-decoration: line-through;
+}
+.discount{
+      font-size: 10px;
+    margin-top: 10px;
+    color: #10b981;
+}
+.view{
+    padding: 8px;
+    border-radius: 6px;
+    border: none;
+    background-color: #f5f5f5;
+    color: #111;
+    cursor: pointer;
+    transition: transform 0.2s ease;
 }
