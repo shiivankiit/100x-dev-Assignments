@@ -6,17 +6,16 @@
   Once you've implemented the logic, test your code by running
   - `npm run test-anagram`
 */
-function isAnagram(str1, str2) {
-    if(str1.length!==str2.length){
-      return false;
-    }
 
-    let sorted=str1.split("").sort().join();
-    let sorted1=str2.split("").sort().join();
+function isAnagram(str1,str2){
+     let string1=str1.split('').sort().join('');
+     let string2=str2.split('').sort().join('');
 
-    return sorted===sorted1
+     if(string1.length === string2.length && string1===string2){
+       console.log(true);
+     }else{
+      console.log(false);
+     }
 }
-console.log(isAnagram('spar','rasp'));
-
-
+isAnagram('sapr','rasp')
 module.exports = isAnagram;
