@@ -5,18 +5,20 @@
 // The function should wait for the given time and then invoke the callback
 // with `null` as the first argument and the provided value as the second argument.
 
-function delay(ms, value, callback) {
-  setTimeout(function () {
-    callback(null, value);
-  }, ms);
-}
-function callback(err, data) {
-  if (err) {
-    console.log(err);
-    return;
-  }
+//Revisiting the assignment again.
 
-  console.log(data);
+function delay(ms,value,callback){
+  setTimeout(()=>{
+    callback(null,value);
+  },ms);
 }
-delay(4000, 'hello', callback);
+//This is a callback function.
+function callback(err,data){
+  if(err){
+    console.log(err);
+  }else{
+    console.log(data);
+  }
+}
+delay(4000,'Hello',callback);
 module.exports = delay;

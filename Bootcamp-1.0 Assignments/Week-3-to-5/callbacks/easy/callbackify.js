@@ -11,53 +11,42 @@
 // Ek function fn hai jo Promise return kar raha hai. callbackify(fn) ko ek naya function return karna hai. 
 // Us naye function ka last argument callback hoga. Woh fn ko call karega, aur jab Promise resolve/reject hoga
 // , tab callback ko result/error ke saath call karega.
-const fs = require("fs");
 
-function fn(filename) {
+const fs=require('fs');
 
-    return new Promise((resolve, reject) => {
-
-        fs.readFile(filename, "utf8", (error, data) => {
-
-            if (error) {
-                reject(error);
-                return;
-            }
-
-            resolve(data);
-        });
-
-    });
-}
-function callbackify(fn) {
-
-    return function (...args) {
-
-        const callback = args.pop();
-
+function callbackify(fn){
+    return function(...args){
+        let callback=args.pop();
         fn(...args)
-            .then((result) => {
-                callback(null, result);
-            })
-            .catch((error) => {
-                callback(error, null);
-            });
-
-    };
+        .then((data)=>{
+            callback(null,data)
+        })
+        .catch((err)=>{
+            callback(null,err)
+        })
+    }
 }
 
+function fn(filename,encoding){
+    return new Promise((resolve,reject)=>{
+        fs.readFile(filename,encoding,((err,data)=>{
+            if(err){
+                reject(err);
+            }else{
+                resolve(data);
+            }
+        }))
+    })
+}
 
-const readFileWithCallback = callbackify(fn);
+const readfiledata=callbackify(fn);
 
-
-readFileWithCallback("a.txt", (error, data) => {
-
-    if (error) {
-        console.log("Error:", error);
-        return;
+readfiledata("a.txt",'utf-8',(err,data)=>{
+    if(err){
+        console.log("Error while reading the file");
+    }else{
+        console.log("File reading done",data);
     }
-
-    console.log("File content:", data);
-});
+})
 
 module.exports = callbackify;
