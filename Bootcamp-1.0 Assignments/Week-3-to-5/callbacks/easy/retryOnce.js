@@ -5,38 +5,38 @@
 // if the first attempt rejects.
 // If the second attempt also rejects, the error should be propagated.
 
-  
- let attempt = 0;
 
-function fn() {
-  return new Promise((resolve, reject) => {
-    attempt++;
-    console.log(`fn call #${attempt}`);
+ function fn(){
+  return new Promise((resolve,reject)=>{
+     setTimeout(()=>{
+      resolve("Data recieved");
+     },3000);
+  })
+ }
 
-    setTimeout(() => {
-      if (attempt === 1) {
-        reject(new Error("Pehli baar fail"));
-      } else {
-        resolve("Data mil gaya");
+ function retryOnce(fn){
+    return function(){
+      async function main(){
+        try{
+          const result=await fn();
+          return result;
+        }catch(err){
+          const result=await fn();
+          return result;
+        }
       }
-    }, 1000);
-  });
-}
-
-function retryOnce(fn) {
-  return async function (...args) {
-    try {
-      return await fn(...args);
-    } catch (err) {
-      console.log("-> pehla attempt fail, retry kar raha hu...");
-      return await fn(...args);
+      return main();
     }
-  };
-}
+ }
 
-const safeFn = retryOnce(fn);   // wrapper banao
+ const fncall=retryOnce(fn);
+fncall()
+.then((result) => {
+   console.log(result);
+   
+}).catch((err) => {
+  console.log(err);
+});
 
-safeFn()                         // wrapper chalao
-  .then(data => console.log("Result:", data))
-  .catch(err => console.log("Final error:", err.message));
-  module.exports = retryOnce;
+
+module.exports = retryOnce;
